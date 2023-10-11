@@ -28,6 +28,5 @@ var longestPalindrome = function(s) {
             }
         }
     }
-    
     return s.substring(pointer, pointer + longest);
 };
