@@ -15,7 +15,6 @@ var longestPalindrome = function(s) {
         }
         return true;
     }
-
     let longest = 0;
     let pointer = 0;
     for (let i = 0; i < s.length; i++) {
