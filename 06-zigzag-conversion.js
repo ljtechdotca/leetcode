@@ -9,11 +9,9 @@ var convert = function(s, numRows) {
     if (numRows == 1) {
         return s;
     }
-
     let answer = "";
     let length = s.length;
     let step = 2 * numRows - 2;
-    
     for (let i = 0; i < numRows; i++) {
         for (let j = 0; j + i < length; j += step) {
             answer += s[j + i];
@@ -22,6 +20,5 @@ var convert = function(s, numRows) {
             }
         }
     }
-
     return answer;
 };
